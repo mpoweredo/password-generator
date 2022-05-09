@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./src/scripts/generatePassword.js" defer></script>
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <title>Password Generator</title>
+</head>
+<body>
+
+        <p id="result" class="result">Your password here</p>
+
+        <div class="configure-password">
+            <div class="length">
+                <div class="length-ten">
+                    <input type="radio" name="length" value="10" id=""> 10 signs
+                </div>
+                <div class="length-twenty">
+                    <input type="radio" name="length" value="20" id=""> 20 signs
+                </div>
+                <div class="length-thirty">
+                    <input type="radio" name="length" value="30" id=""> 30 signs
+                </div>
+            </div>
+            <div class="characters">
+                <div class="special-char">
+                    <input type="checkbox" name="characters" value="specialCharacters" data-answer="jd" id=""> Special characters (like $#& etc.)
+                </div>
+                <div class="uppercase">
+                    <input type="checkbox" name="characters" value="uppercaseCharacters" id=""> Uppercase letters
+                </div>
+                <div class="lowercase">
+                    <input type="checkbox" name="characters" value="lowercaseCharacters" id=""> Lowercase letters
+                </div>
+                <div class="numbers">
+                    <input type="checkbox" name="characters" value="numbers" id=""> Numbers
+                </div>
+            </div>
+            <button id="generate-password" class="generate-button">Generate Password</button>
+        </div>
+        
+</body>
+</html>

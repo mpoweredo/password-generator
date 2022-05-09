@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+    background-color: #08010f;
+    padding: 100px 200px;
+    font-family: 'Epilogue', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.result {
+    width: 65%;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 2em;
+    background-color: #18052b;
+    padding: 1.2em 1em;
+    margin-bottom: 2em;
+}
+
+.generate-button {
+    margin-top: 2em;
+    padding: .8em 1.2em;
+    color: black;
+    font-size: 1.4em;
+    border-radius: 6px;
+    font-weight: 600;
+    color: #1c0633;
+    background-color: #a274cf;
+    align-self: center;
+}
+
+.configure-password {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.length {
+    display: flex;
+    flex-direction: column;
+    gap: .7em;
+    font-size: 1.2em;
+}
+
+.characters {
+    display: flex;
+    flex-direction: column;
+    gap: .4em;
+    font-size: 1.2em;
+}
+
+.length div {
+    display: flex;
+    gap: .6em;
+}
+
+@media screen and (max-width: 1400px) {
+
+    .result {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    body {
+        padding: 100px 100px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    body {
+        padding: 100px 0px;
+    }
+}
+
+
+@media screen and (max-width: 850px) {
+    .result {
+        font-size: 1.75em;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .result {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .result {
+        font-size: 1.25em;
+    }
+
+    .generate-button {
+        padding: .4em .6em;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .result {
+        font-size: 1em;
+        width: 95%;
+    }
+
+    body {
+        padding: 100px 0;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .result {
+        font-size: .9em;
+        width: 95%;
+    }
+
+    body {
+        padding: 100px 0;
+    }
+    .generate-button {
+        width: 75%;
+    }
+
+    .characters {
+        font-size: 1em;
+    }
+
+}
+
